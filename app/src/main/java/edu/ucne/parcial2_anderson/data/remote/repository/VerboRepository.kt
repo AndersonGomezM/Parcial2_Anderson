@@ -7,5 +7,5 @@ import java.lang.Exception
 import javax.inject.Inject
 
 class VerboRepository {
-    
+
 }
