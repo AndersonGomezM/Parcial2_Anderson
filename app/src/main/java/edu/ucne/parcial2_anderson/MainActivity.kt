@@ -10,6 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import coil.compose.AsyncImage
 import edu.ucne.parcial2_anderson.ui.theme.Parcial2_AndersonTheme
 
 class MainActivity : ComponentActivity() {
@@ -38,6 +39,9 @@ fun Greeting(name: String) {
 @Composable
 fun DefaultPreview() {
     Parcial2_AndersonTheme {
-        Greeting("Android")
+        AsyncImage(
+            model = "https://catequesisellimon.files.wordpress.com/2018/03/doc.jpg",
+            contentDescription = "Android"
+        )
     }
 }
