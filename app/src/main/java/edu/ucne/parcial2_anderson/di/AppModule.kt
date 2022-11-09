@@ -26,7 +26,7 @@ object AppModule {
     @Singleton
     @Provides
     fun provideVerboApi(moshi: Moshi): VerboApi {
-        val Base_Url = "https://private-a127e-verbos.apiary-mock.com/verbos"
+        val Base_Url = "https://private-a127e-verbos.apiary-mock.com"
         return Retrofit.Builder()
             .baseUrl(Base_Url)
             .addConverterFactory(MoshiConverterFactory.create(moshi))
